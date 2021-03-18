@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(require("./Routes/users"))
 
 app.get("/", (req, res) => {
-    res.send({ message: "YOUR API IS WORKING!", code: 200 });
+    res.send("YOUR API IS WORKING!");
   });
   
 app.listen('3001', () => {
